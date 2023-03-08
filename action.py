@@ -56,11 +56,11 @@ if __name__ == "__main__":
 
     SEMBENCH_CONFIG_PATH = get_sembench_config_path(GITHUB_WORKSPACE / SEMBENCH_WORKSPACE)
 
-    sembench_arguments = {
+    sembench_kwargs = {
         "INPUT_DATA_LOCATION": str(GITHUB_WORKSPACE),
         "SEMBENCH_DATA_LOCATION": str(GITHUB_WORKSPACE / SEMBENCH_WORKSPACE),
         "SEMBENCH_CONFIG_PATH": str(GITHUB_WORKSPACE / SEMBENCH_WORKSPACE / SEMBENCH_CONFIG_PATH),
     }
 
-    with open(GITHUB_WORKSPACE / Path("~sembench_arguments.json"), "w") as f:
-        json.dump(sembench_arguments, f)
+    with open(GITHUB_WORKSPACE / Path("~sembench_kwargs.json"), "w") as f:
+        json.dump(sembench_kwargs, f)
