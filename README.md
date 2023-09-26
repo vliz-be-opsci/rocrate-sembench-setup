@@ -13,7 +13,7 @@ jobs:
       - name: rocrate-to-sembench
         uses: vliz-be-opsci/rocrate-to-sembench@main
         env:
-          PROFILE: https://raw.githubusercontent.com/emo-bon/emo-bon-profile-0.1/main
+          PROFILE: https://data.emobon.embrc.eu/observatory-profile/0.2
 ```
 
 with:
