@@ -59,7 +59,7 @@ if __name__ == "__main__":
     sembench_kwargs = {
         "INPUT_DATA_LOCATION": str(GITHUB_WORKSPACE),
         "SEMBENCH_DATA_LOCATION": str(SEMBENCH_WORKSPACE),
-        "SEMBENCH_CONFIG_PATH": str(SEMBENCH_WORKSPACE / "sembench.json"),  # TODO read from profile metadata
+        "SEMBENCH_CONFIG_PATH": str(SEMBENCH_WORKSPACE / "sembench.yaml"),  # TODO read from profile metadata
     }
 
     with open(GITHUB_WORKSPACE / "~sembench_kwargs.json", "w") as f:
